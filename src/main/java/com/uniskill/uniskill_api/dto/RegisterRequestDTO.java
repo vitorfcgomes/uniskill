@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
-public class RegisterRequestDTO implements Serializable {
+public class RegisterRequestDTO {
     @NotBlank // campo não pode ser nulo ou vazio
     private String name;
 

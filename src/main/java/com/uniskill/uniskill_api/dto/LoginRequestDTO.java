@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
-public class LoginRequestDTO implements Serializable {
+public class LoginRequestDTO {
     @NotBlank
     @Email
     private String email;

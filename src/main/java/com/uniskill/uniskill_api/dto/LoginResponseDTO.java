@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
-public class LoginResponseDTO implements Serializable {
+public class LoginResponseDTO {
     private String message;
     private String token;
 }
