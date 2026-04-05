@@ -25,6 +25,7 @@ public class User implements Serializable {
     private String password;
     private String avatarUrl;
     private LocalDateTime createdAt;
+    private String phone;
 
     @Enumerated(EnumType.STRING)
     private Role role;
