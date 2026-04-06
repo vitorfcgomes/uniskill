@@ -17,6 +17,7 @@ import java.util.Optional;
 public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
 
     @Override
     public void register(RegisterRequestDTO registerRequestDTO) {
@@ -24,13 +25,13 @@ public class AuthServiceImpl implements AuthService {
         if(userRepository.findByEmail(registerRequestDTO.getEmail()).isPresent()){
             throw new RuntimeException("Email já cadastrado");
         }
-        //criptografa a senha com BCrypt
+        //criptografa a senha com BCrypt utilizando um hash seguro
         String encryptedPassword = passwordEncoder.encode(registerRequestDTO.getPassword());
 
         //cria o objeto user e preenche todos os campos
         User user = new User();
 
-        user.setUsername(registerRequestDTO.getName());
+        user.setName(registerRequestDTO.getUsername());
         user.setEmail(registerRequestDTO.getEmail());
         user.setPassword(encryptedPassword);
         user.setCreatedAt(LocalDateTime.now());
@@ -53,7 +54,12 @@ public class AuthServiceImpl implements AuthService {
         if (!passwordEncoder.matches(loginRequestDTO.getPassword(), user.getPassword())){
            throw new RuntimeException("Senha incorreta!");
         }
+        String token = jwtService.generateToken(user);
 
-        return null;
+        LoginResponseDTO loginResponseDTO = new LoginResponseDTO();
+        loginResponseDTO.setMessage("Login realizado com sucesso!");
+        loginResponseDTO.setToken(token);
+
+        return loginResponseDTO;
     }
 }
