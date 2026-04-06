@@ -14,7 +14,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class RegisterRequestDTO {
     @NotBlank // campo não pode ser nulo ou vazio
-    private String name;
+    private String username;
 
     @NotBlank
     @Email // valida formato de email
