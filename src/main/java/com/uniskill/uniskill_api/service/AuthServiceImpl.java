@@ -31,7 +31,7 @@ public class AuthServiceImpl implements AuthService {
         //cria o objeto user e preenche todos os campos
         User user = new User();
 
-        user.setName(registerRequestDTO.getUsername());
+        user.setUsername(registerRequestDTO.getUsername());
         user.setEmail(registerRequestDTO.getEmail());
         user.setPassword(encryptedPassword);
         user.setCreatedAt(LocalDateTime.now());
