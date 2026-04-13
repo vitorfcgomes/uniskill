@@ -22,6 +22,17 @@ public class CourseResponseDTO {
     private LocalDateTime createdAt;
     private String creatorName;
 
-    public CourseResponseDTO(Course saved) {
+    public static CourseResponseDTO fromEntity(Course course) {
+        CourseResponseDTO dto = new CourseResponseDTO();
+        dto.setId(course.getId());
+        dto.setTitle(course.getTitle());
+        dto.setDescription(course.getDescription());
+        dto.setCategory(course.getCategory());
+        dto.setPrice(course.getPrice());
+        dto.setRating(course.getRating());
+        dto.setThumbnailUrl(course.getThumbnailUrl());
+        dto.setCreatedAt(course.getCreatedAt());
+        dto.setCreatorName(course.getCreator().getUsername());
+        return dto;
     }
 }
