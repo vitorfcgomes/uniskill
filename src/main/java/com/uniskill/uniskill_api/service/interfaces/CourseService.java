@@ -1,7 +1,7 @@
-package com.uniskill.uniskill_api.service;
+package com.uniskill.uniskill_api.service.interfaces;
 
-import com.uniskill.uniskill_api.dto.CourseRequestDTO;
-import com.uniskill.uniskill_api.dto.CourseResponseDTO;
+import com.uniskill.uniskill_api.dto.request.CourseRequestDTO;
+import com.uniskill.uniskill_api.dto.response.CourseResponseDTO;
 
 import java.util.List;
 import java.util.UUID;
