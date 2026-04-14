@@ -1,4 +1,4 @@
-package com.uniskill.uniskill_api.dto;
+package com.uniskill.uniskill_api.dto.response;
 
 import com.uniskill.uniskill_api.model.Course;
 import com.uniskill.uniskill_api.model.enums.Category;
