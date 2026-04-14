@@ -17,8 +17,8 @@ public class Lesson implements Serializable {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "course_id")
-    private Course course;
+    @JoinColumn(name = "module_id")
+    private Module module;
     private String title;
     private Integer orderIndex;
     private String videoUrl;
