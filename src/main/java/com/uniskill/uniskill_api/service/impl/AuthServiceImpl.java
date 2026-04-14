@@ -1,10 +1,12 @@
-package com.uniskill.uniskill_api.service;
+package com.uniskill.uniskill_api.service.impl;
 
-import com.uniskill.uniskill_api.dto.LoginRequestDTO;
-import com.uniskill.uniskill_api.dto.LoginResponseDTO;
-import com.uniskill.uniskill_api.dto.RegisterRequestDTO;
+import com.uniskill.uniskill_api.dto.request.LoginRequestDTO;
+import com.uniskill.uniskill_api.dto.response.LoginResponseDTO;
+import com.uniskill.uniskill_api.dto.request.RegisterRequestDTO;
 import com.uniskill.uniskill_api.model.User;
 import com.uniskill.uniskill_api.repository.UserRepository;
+import com.uniskill.uniskill_api.service.JwtService;
+import com.uniskill.uniskill_api.service.interfaces.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
