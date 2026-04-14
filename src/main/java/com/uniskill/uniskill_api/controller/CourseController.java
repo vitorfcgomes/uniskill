@@ -1,8 +1,8 @@
 package com.uniskill.uniskill_api.controller;
 
-import com.uniskill.uniskill_api.dto.CourseRequestDTO;
-import com.uniskill.uniskill_api.dto.CourseResponseDTO;
-import com.uniskill.uniskill_api.service.CourseService;
+import com.uniskill.uniskill_api.dto.request.CourseRequestDTO;
+import com.uniskill.uniskill_api.dto.response.CourseResponseDTO;
+import com.uniskill.uniskill_api.service.interfaces.CourseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
