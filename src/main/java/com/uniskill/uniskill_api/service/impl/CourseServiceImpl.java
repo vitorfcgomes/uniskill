@@ -1,11 +1,12 @@
-package com.uniskill.uniskill_api.service;
+package com.uniskill.uniskill_api.service.impl;
 
-import com.uniskill.uniskill_api.dto.CourseRequestDTO;
-import com.uniskill.uniskill_api.dto.CourseResponseDTO;
+import com.uniskill.uniskill_api.dto.request.CourseRequestDTO;
+import com.uniskill.uniskill_api.dto.response.CourseResponseDTO;
 import com.uniskill.uniskill_api.model.Course;
 import com.uniskill.uniskill_api.model.User;
 import com.uniskill.uniskill_api.repository.CourseRepository;
 import com.uniskill.uniskill_api.repository.UserRepository;
+import com.uniskill.uniskill_api.service.interfaces.CourseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class CourseServiceImpl implements CourseService{
+public class CourseServiceImpl implements CourseService {
     private final CourseRepository courseRepository;
     private final UserRepository userRepository;
 
