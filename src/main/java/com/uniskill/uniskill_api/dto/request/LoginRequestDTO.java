@@ -1,11 +1,9 @@
-package com.uniskill.uniskill_api.dto;
+package com.uniskill.uniskill_api.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
