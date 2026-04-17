@@ -1,6 +1,6 @@
-package com.uniskill.uniskill_api.service;
+package com.uniskill.uniskill_api.service.interfaces;
 
-import com.uniskill.uniskill_api.dto.EnrollmentResponseDTO;
+import com.uniskill.uniskill_api.dto.response.EnrollmentResponseDTO;
 
 import java.util.UUID;
 

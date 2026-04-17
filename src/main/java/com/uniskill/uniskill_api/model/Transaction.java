@@ -20,8 +20,8 @@ public class Transaction implements Serializable {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "wallet_id")
-    private Wallet wallet;
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @ManyToOne
     @JoinColumn(name = "course_id")

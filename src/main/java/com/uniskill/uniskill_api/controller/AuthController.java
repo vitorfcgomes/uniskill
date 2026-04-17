@@ -1,9 +1,9 @@
 package com.uniskill.uniskill_api.controller;
 
-import com.uniskill.uniskill_api.dto.LoginRequestDTO;
-import com.uniskill.uniskill_api.dto.LoginResponseDTO;
-import com.uniskill.uniskill_api.dto.RegisterRequestDTO;
-import com.uniskill.uniskill_api.service.AuthService;
+import com.uniskill.uniskill_api.dto.request.LoginRequestDTO;
+import com.uniskill.uniskill_api.dto.response.LoginResponseDTO;
+import com.uniskill.uniskill_api.dto.request.RegisterRequestDTO;
+import com.uniskill.uniskill_api.service.interfaces.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.uniskill.uniskill_api.dto;
+package com.uniskill.uniskill_api.dto.request;
 
 import com.uniskill.uniskill_api.model.enums.Category;
 import jakarta.validation.constraints.NotBlank;
@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor

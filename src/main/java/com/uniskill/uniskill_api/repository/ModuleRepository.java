@@ -1,9 +1,9 @@
 package com.uniskill.uniskill_api.repository;
 
-import com.uniskill.uniskill_api.model.Wallet;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
+import com.uniskill.uniskill_api.model.Module;
 
-public interface WalletRepository extends JpaRepository<Wallet, UUID> {
+public interface ModuleRepository extends JpaRepository<Module, UUID> {
 }

@@ -1,10 +1,10 @@
-package com.uniskill.uniskill_api.service;
+package com.uniskill.uniskill_api.service.impl;
 
-import com.uniskill.uniskill_api.dto.EnrollmentRequestDTO;
-import com.uniskill.uniskill_api.dto.EnrollmentResponseDTO;
+import com.uniskill.uniskill_api.dto.response.EnrollmentResponseDTO;
 import com.uniskill.uniskill_api.model.Course;
 import com.uniskill.uniskill_api.model.User;
 import com.uniskill.uniskill_api.repository.*;
+import com.uniskill.uniskill_api.service.interfaces.EnrollmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class EnrollmentServiceImpl implements EnrollmentService{
+public class EnrollmentServiceImpl implements EnrollmentService {
 
     private final EnrollmentRepository enrollmentRepository;
     private final UserRepository userRepository;
