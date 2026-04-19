@@ -1,4 +1,4 @@
-package com.uniskill.uniskill_api.dto;
+package com.uniskill.uniskill_api.dto.request;
 
 import com.uniskill.uniskill_api.model.enums.Role;
 import jakarta.validation.constraints.Email;
@@ -7,8 +7,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
 
 @Data
 @NoArgsConstructor

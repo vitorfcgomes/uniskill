@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -28,8 +29,11 @@ public class Course implements Serializable {
     @Enumerated(EnumType.STRING)
     private Category category;
 
-    private Double price;
+    private BigDecimal price;
+
     private Double rating;
+
     private String thumbnailUrl;
+
     private LocalDateTime createdAt;
 }

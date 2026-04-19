@@ -1,9 +1,7 @@
-package com.uniskill.uniskill_api.dto;
+package com.uniskill.uniskill_api.dto.response;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
